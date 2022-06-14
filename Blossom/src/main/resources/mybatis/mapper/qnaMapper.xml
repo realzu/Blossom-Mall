@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.boot.mapper.QnAMapper">
+
+	<insert id="insertQnAData" parameterType="com.spring.boot.dto.QnADTO">
+		insert into QNA (type,id,num,title,contents,nal,state)
+		values (#{type},#{id},#{num},#{title},#{contents},TO_CHAR(SYSDATE, 'YYYY-MM-DD'),#{state})
+	</insert>
+	
+	<select id="getReadQnAData" parameterType="int" resultType="com.spring.boot.dto.QnADTO">
+		select type,id,TO_CHAR(SYSDATE, 'YYYY-MM-DD')nal,num,title,contents,state from qna
+	</select>
+
+</mapper>

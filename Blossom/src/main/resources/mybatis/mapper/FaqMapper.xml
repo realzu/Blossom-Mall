@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.boot.mapper.FAQMapper">
+
+	<select id="maxNum" resultType="int">
+		select nvl(max(f_num),0) from faq
+	</select>
+
+	<insert id="insertFaq" parameterType="com.spring.boot.dto.FAQDTO">
+		insert into faq (f_num, f_title, f_contents)
+		values (#{f_num},#{f_title},#{f_contents})
+	</insert>
+	
+	<select id="getDataCount" parameterType="hashMap" resultType="int">
+		select nvl(count(*),0) from faq
+		where ${searchKey} like '%' || #{searchValue} || '%'
+	</select>
+	
+	<select id="getLists" parameterType="hashMap" resultType="com.spring.boot.dto.FAQDTO">
+		select * from (
+		select rownum rnum, data.* from(
+		select num,name,subject,hitCount,to_char(created,'YYYY-MM-DD') created
+		from faq where ${searchKey} like '%' || #{searchValue} || '%'
+		order by num desc) data)
+		where rnum>=#{start} and rnum&lt;=#{end}
+	</select>
+	
+	<select id="fetchFaqByNum" parameterType="int" resultType="com.spring.boot.dto.FAQDTO">
+		select f_num, f_title, f_contents from faq
+		where f_num=#{num}
+	</select>
+	
+	<update id="updateFaq" parameterType="com.spring.boot.dto.FAQDTO">
+		update faq set name=#{name},pwd=#{pwd},email=#{email},subject=#{subject},content=#{content}
+		where f_num=#{num}
+	</update>
+	
+	<delete id="deleteFaq" parameterType="int">
+		delete faq where f_num=#{num}
+	</delete>
+	
+</mapper>

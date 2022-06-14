@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTDMapper3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.spring.boot.mapper.ProductMapper">
+  
+  	<select id="maxNum" resultType="int">
+		select nvl(max(p_num),0) from product
+	</select>
+	 
+	<insert id="insertProduct" parameterType="com.spring.boot.dto.ProductDTO">
+       INSERT INTO product(p_num, p_name, p_date, p_price, p_rate, p_tag, p_color,p_brand, p_cate1, p_cate2, hitcount)
+       VALUES(#{p_num}, #{p_name}, sysdate, #{p_price}, #{p_rate}, #{p_tag}, #{p_color}, #{p_brand}, #{p_cate1}, #{p_cate2}, 0)
+    </insert>
+ 
+	<!-- 조회수 증가  -->
+	<!-- <update id="updateHitCount" parameterType="int">
+		update product set hitcount=hitcount+0.5 where p_num=#{p_num}
+	</update> -->
+
+	<!-- 데이터 읽어오기 -->	
+	<!-- <select id="getReadData" parameterType="int" resultType="com.spring.boot.dto.ProductDTO">
+		SELECT p_num, p_name, TO_CHAR(p_date, 'YYYY-MM-DD') p_date, p_price, p_rate, p_tag, p_color,p_brand, p_cate1, p_cate2, hitcount FROM product
+       WHERE p_num = #{p_num}
+	</select>  --> 
+	
+	<!-- 역순으로 리스트 뽑기 -->
+	<!-- <select id="getLists" parameterType="hashMap" resultType="com.spring.boot.dto.ProductDTO">
+		select p_num, p_name, p_date, p_price, p_rate, p_tag, p_color,p_brand, p_cate1, p_cate2, hitcount from product
+        order by p_num DESC
+	</select> -->
+  
+  	<!-- 역순으로 리스트 뽑기 -->
+	<select id="getLists" parameterType="hashMap" resultType="com.spring.boot.dto.ProductDTO">
+		select * from (
+	select rownum rnum, a.* from (
+		select p.p_num, p.p_name, p.p_date, p.p_price, p.p_rate, p.p_tag, p.p_cate1,
+		 p.p_cate2, p.p_color, p.hitcount, p.p_brand, i.i_num, i.i_save
+		 from product p join IMAGES i
+		 on p.p_num = i.p_num
+		 order by p.p_num desc) a)
+		where rnum between 1 and 8
+	</select>
+	
+	<!-- 조회수 증가  -->
+	<update id="updateHitCount" parameterType="int">
+		update product set hitcount=hitcount+0.5 where p_num=#{p_num}
+	</update>
+
+	<!-- 데이터 읽어오기 -->	
+	<select id="getReadData" parameterType="int" resultType="com.spring.boot.dto.ProductDTO">
+		SELECT p.p_num, p.p_name, p.p_date, p.p_price , p.p_rate, p.p_tag, p.p_cate1, p.p_cate2, p.p_color, p.hitcount, p.p_brand, 
+		i.i_num, i.i_save 
+		 FROM product p JOIN IMAGES i 
+		 on p.p_num = i.p_num
+	     WHERE p.p_num = #{p_num} and i.i_num = 1
+	</select>
+	
+		<!-- 데이터 읽어오기 -->	
+	<select id="getReadData2" parameterType="int" resultType="com.spring.boot.dto.ProductDTO">
+		SELECT p.p_num, p.p_name, p.p_date, p.p_price , p.p_rate, p.p_tag, p.p_cate1, p.p_cate2, p.p_color, p.hitcount, p.p_brand, 
+		i.i_num, i.i_save 
+		 FROM product p JOIN IMAGES i 
+		 on p.p_num = i.p_num
+	     WHERE p.p_num = #{p_num} and i.i_num = 2
+	</select>
+  </mapper>

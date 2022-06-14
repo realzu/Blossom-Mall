@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.boot.mapper.NoticeMapper">
+
+	<select id="maxNum" resultType="int">
+		select nvl(max(n_num),0) from notices
+	</select>
+
+	<insert id="insertNotice" parameterType="com.spring.boot.dto.NoticeDTO">
+		insert into notices (n_num, n_title, n_contents)
+		values (#{n_num},#{n_title},#{n_contents})
+	</insert>
+	
+	<select id="getDataCount" parameterType="hashMap" resultType="int">
+		select nvl(count(*),0) from notices
+		where ${searchKey} like '%' || #{searchValue} || '%'
+	</select>
+	
+	<select id="getLists" parameterType="hashMap" resultType="com.spring.boot.dto.NoticeDTO">
+		select * from (
+		select rownum rnum, data.* from(
+		select num,name,subject,hitCount,to_char(created,'YYYY-MM-DD') created
+		from notices where ${searchKey} like '%' || #{searchValue} || '%'
+		order by num desc) data)
+		where rnum>=#{start} and rnum&lt;=#{end}
+	</select>
+	
+	<select id="fetchNoticeByNum" parameterType="int" resultType="com.spring.boot.dto.NoticeDTO">
+		select n_num, n_title, n_contents from notices
+		where n_num=#{num}
+	</select>
+	
+	<update id="updateNotice" parameterType="com.spring.boot.dto.NoticeDTO">
+		update notices set name=#{name},pwd=#{pwd},email=#{email},subject=#{subject},content=#{content}
+		where n_num=#{num}
+	</update>
+	
+	<delete id="deleteNotice" parameterType="int">
+		delete notices where n_num=#{num}
+	</delete>
+	
+</mapper>

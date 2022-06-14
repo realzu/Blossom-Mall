@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.boot.mapper.MainMapper">
+	
+	<select id="proBest" resultType="com.spring.boot.dto.MainDTO">
+select * from (
+	select rownum rnum, a.* from (
+		select p.hitCount,p.p_num,p.p_name,p.p_date,p.p_price,p.p_rate,p.p_tag,p.p_cate1,p.p_cate2,p.p_brand,i.i_num,i.i_save
+		from product p join images i
+		on p.p_num = i.p_num and i.i_num = 1
+		order by p.hitCount desc) a)
+where rnum between 1 and 8
+	</select>	
+	
+	<select id="proNew" resultType="com.spring.boot.dto.MainDTO">		
+select * from (
+	select rownum rnum, a.* from (
+		select p.hitCount,p.p_num,p.p_name,p.p_date,p.p_price,p.p_rate,p.p_tag,p.p_cate1,p.p_cate2,p.p_brand,i.i_num,i.i_save
+		from product p join images i
+		on p.p_num = i.p_num and i.i_num = 1
+		order by p.p_date desc) a)
+where rnum between 1 and 8
+	</select>
+	
+	<select id="proTag" resultType="com.spring.boot.dto.MainDTO">			
+select * from (
+	select rownum rnum, a.* from (
+		select p.hitCount,p.p_num,p.p_name,p.p_date,p.p_price,p.p_rate,p.p_tag,p.p_cate1,p.p_cate2,p.p_brand,i.i_num,i.i_save
+		from product p join images i
+		on p.p_num = i.p_num and i.i_num = 1 and p.p_tag LIKE 'lovely'
+		order by p.p_date desc) a)
+where rnum between 1 and 8
+	</select>
+	
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTDMapper3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.spring.boot.mapper.ImagesMapper">
+  
+  	<select id="maxNum" parameterType="int" resultType="int">
+		select nvl(count(*),0) from images where p_num=#{p_num}
+	</select>
+	 
+    <insert id="insertImage" parameterType="com.spring.boot.dto.ImagesDTO">
+       INSERT INTO images(i_num, p_num, i_origin, i_save, i_filepath)
+       VALUES(#{i_num}, #{p_num}, #{i_origin}, #{i_save}, #{i_filepath})
+       <!-- dto -->
+    </insert>
+  
+  </mapper>

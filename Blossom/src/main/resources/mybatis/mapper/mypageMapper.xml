@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.boot.mapper.MypageMapper">
+
+<!-- 	<select id="getList" parameterType="String" resultType="com.spring.boot.dto.MypageDTO">
+		select o.o_num,o.p_num,o.c_quantity,o.od_total,o.od_status,TO_CHAR(p.p_date, 'YYYY-MM-DD')p_date,p.p_name,i.I_SAVE,m.m_id from order_detail o
+		LEFT join images i
+		on o.p_num = i.p_num
+		LEFT join product p
+		on o.p_num = p.p_num
+		LEFT join mem m
+		on m.m_id = o.m_id
+		where m.m_id = #{m_id}
+	</select> -->
+	
+	<select id="getList" parameterType="String" resultType="com.spring.boot.dto.MypageDTO">
+		select o.o_num,o.p_num,o.c_quantity,o.od_total,o.od_status,p.p_name,TO_CHAR(p.p_date, 'YYYY-MM-DD')p_date,i.I_SAVE from order_detail o
+		LEFT join images i
+		on o.p_num = i.p_num
+		LEFT join product p
+		on o.p_num = p.p_num
+		LEFT join mem m
+		on m.m_id = o.m_id
+		where m.m_id = #{m_id}
+	</select>
+	
+	<select id="getId" resultType="com.spring.boot.dto.MypageDTO" parameterType="String"> 
+		select * from mem
+		where m_id = #{m_id}
+	</select>
+
+</mapper>			
