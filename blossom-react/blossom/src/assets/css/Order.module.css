@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* border: 1px solid salmon; */
+}
+.container1a{  text-decoration: none;
+    text-decoration-color: black;
+}
+.container1{
+    margin: 50px auto;
+    width: 1040px;
+    height: 10000px;
+}
+.container1ul{
+    list-style: none;
+}
+/*------------주문내역------------*/
+.ordercheck table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+.ordercheck ul li:first-child{
+    position: relative;
+    top: 20px;
+}
+.ordercheck ul li:last-child{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.ordercheck thead tr{
+    font-size: 18px;
+    width: 1040px;
+    height: 30px;
+    font-weight: lighter;
+    background-color: rgb(255, 210, 221);
+}
+.ordercheck th:first-of-type{
+    text-align: center;
+    width: 500px;
+}
+
+.ordercheck th:not(:first-of-type){
+    text-align: center;
+    width: 145px;
+}
+
+.ordercheck tbody tr{
+    height: 250px;
+    
+}
+.ordercheck img{
+    width: 180px;
+    height: 180px;
+
+}
+.ordercheck tbody td:first-child{
+    text-align: center;
+    width: 50px;
+    
+}
+.ordercheck tbody td:nth-child(2){
+    width: 200px;
+    text-align: center;
+    
+}
+.ordercheck tbody td:nth-child(3){
+    text-align: left;
+    font-size: 18px;
+    width: 250px;
+    position: relative;
+    left: 20px;
+}
+
+.ordercheck tbody td:nth-child(n+4):nth-child(-n+7){
+    text-align: center;
+    
+}
+.amount{
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+}
+.container1 hr{
+    border: 5px solid rgb(255, 210, 221);
+    background-color: rgb(255, 210, 221);
+}
+.c_total{
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+/*------------배송정보------------*/
+.deliverinfo{
+    margin-top: 100px;
+    width: 1040px;
+    height: 700px;
+}
+.deliverinfo table{
+    border-collapse: collapse;
+}
+.deliver tr td{
+    width: 520px;
+    height: 40px;
+    border-bottom: 3px solid rgb(255, 210, 221);
+}
+.deliver tr td:first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+.deliver tr td:last-child{
+    font-size: 15px;
+    text-align: left;
+}
+.info{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.info span{
+    color: rgb(255, 210, 221);
+}
+
+.info tr td:nth-child(1){
+    width: 180px;
+    height: 130px;
+}
+.info tr td:nth-child(2){
+    width: 700px;
+}
+.info input{
+    border: 2px solid rgb(255, 210, 221);
+    height: 40px;
+    color: rgb(106, 106, 106);
+    font-size: 15px;
+    outline: none;
+    padding-left: 10px;
+    text-align: left;
+}
+.info input[type="text"]{
+    text-align: left;
+}
+.info ::-webkit-input-placeholder {
+    text-align: left;
+ }
+.info tr:nth-child(n+1):nth-child(-n+2) input{
+    width: 200px;
+}
+.info tr:nth-child(3) td input{
+    margin: 3px 0;
+}
+.info button{
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    background-color: rgb(255, 210, 221);
+    border: 1px solid rgb(255, 210, 221);
+    margin-left: 6px;
+    position: relative;
+    top:5px;
+    cursor: pointer;
+}
+.info button:hover{
+    color:rgb(68, 68, 68);
+}
+.info tr:nth-child(3) td input{
+    width: 700px;
+}
+.info tr:nth-child(3) td input:nth-child(1){
+    width: 100px;
+    background-color: rgb(251, 232, 237);
+}
+
+.info tr:nth-child(4) td input{
+    width: 700px;
+}
+
+/*------------쿠폰 / 포인트------------*/
+.coup{
+    width: 1040px;
+    border-bottom:3px solid rgb(255, 210, 221);
+    font-size: 25px;
+    font-weight: bold;
+}
+.point{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.point tr td:nth-child(1){
+    width: 180px;
+    height: 130px;
+}
+.point tr td:nth-child(2){
+    width: 700px;
+}
+.point input{
+    border: 2px solid rgb(255, 210, 221);
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+}
+.point tr:nth-child(n+1):nth-child(-n+2) input{
+    width: 150px;
+}
+.point select{
+    height: 40px;
+    width: 700px;
+    padding-left: 10px;
+    border: 2px solid rgb(255, 210, 221);
+    background-color: rgb(251, 232, 237);
+    font-size: 12px;
+    outline: none;
+}
+.point option{
+    height: 40px;
+    width: 700px;
+    padding-left: 10px;
+    border: 2px solid rgb(255, 210, 221);
+}
+
+.point button{
+    width: 80px;
+    height: 44px;
+    color: #fff;
+    background-color: rgb(255, 210, 221);
+    border: 1px solid rgb(255, 210, 221);
+    margin: 0 0 5px 5px;
+    cursor: pointer;
+}
+.point button:hover{
+    color:rgb(68, 68, 68)
+}
+.point span{
+    position: relative;
+    bottom: 26px;
+}
+.point p{
+    margin: 5px 0;
+}
+/*------------결제금액------------*/
+.payment{
+    margin-top: 100px;
+}
+.payment p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.payment table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.payment thead .payment tbody{
+    position: relative;
+    top: 5px;
+
+}
+.payment th{
+    border-bottom: 2px solid rgb(255, 210, 221);
+    border-top: 2px solid rgb(255, 210, 221);
+    background-color: rgb(251, 232, 237);
+    width: 1040px; 
+    height: 50px;
+    font-size: 18px;
+ 
+}
+.payment tbody tr {
+    height: 50px;
+    text-align: center;
+   
+}
+.payment tbody tr td{
+    border-bottom: 2px solid rgb(255, 210, 221);
+    width: 1040px;
+}
+.payment tbody tr td:nth-child(3){
+    text-align: center;
+    position: relative;
+    left: 1px;
+}
+/*------------결제수단------------*/
+.kakao{
+    margin-top: 100px;
+}
+.kakaoo{
+    width: 1040px;
+    border-bottom:3px solid rgb(255, 210, 221);
+    font-size: 25px;
+    font-weight: bold;
+}
+.pay{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.pay tr td:nth-child(1){
+    width: 180px;
+    height: 130px;
+}
+.pay tr td:nth-child(2){
+    width: 700px;
+}
+.pay button{
+    float: left;
+    margin-right: 30px;
+    border: 2px solid rgb(255, 210, 221);
+    width: 130px;
+    height: 45px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+.pay tr td button:focus {
+    background-color: rgb(255, 210, 221);
+  }
+.pay button:hover{
+    background-color: rgb(251, 232, 237);
+}
+
+.lastpay{
+    font-size: 25px;
+    width: 400px;
+    height: 70px;
+    margin: 50px auto;
+    border: 3px solid rgb(255, 210, 221);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+}
+.lastpay:hover{
+    background-color: rgb(251, 232, 237);
+}

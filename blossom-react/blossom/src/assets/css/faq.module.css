@@ -1,0 +1,39 @@
+/* input[type=text], select, textarea {
+    min-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  } */
+.input {
+    min-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container {
+    /* border-radius: 5px; */
+    min-width: 1440px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+.label {
+    text-align: left;
+}
+
+.box {
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    width: 600px;
+}

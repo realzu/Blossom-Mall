@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* border: 1px solid pink; */
+    
+}
+.container {
+    width: 1040px;
+    min-width: auto;
+    margin: 50px auto;
+    
+}
+/* ------제목------ */
+.subject tr td {
+    /* margin-top: 10px; */
+    width: 520px;
+    height: 40px;
+}
+.subject tr td:first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+.subject tr td:last-child{
+    font-size: 18px;
+    text-align: right; 
+}
+
+.subject tr td span {
+    color: black;
+}
+
+.hitcount tr td{
+    width: 1040px;
+    text-align: right; 
+}
+/* ------이미지 칸------ */
+.img{
+    /* border: 1px solid red; */
+    width: 450px;
+    height: 550px;
+    margin: 10px 0;
+    float: left;
+}
+.img img {
+    border-radius:5px;
+    width: 450px;
+    height: 550px;
+}
+/* ------상품설명 칸------ */
+.detail {
+    float: left;
+    width: 450px;
+    height: 550px;
+    /* border: 1px solid rgb(208, 204, 204); */
+    margin: 10px 0  10px 100px;
+    border-bottom: 1px solid rgb(208, 204, 204);
+}
+.detail tr td {
+    width: 200px;
+    height : 50px;
+    position: relative;
+    left: 50px;
+    /* top:20px */
+    bottom: 20px;
+}
+
+.detail tr td s {
+    color: #989898;
+}
+
+.detail p {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 165px;
+    font-weight: bold;
+}
+.detail p span {
+    color: #989898;
+    font-size: 13px;
+}
+
+.detail tr td:first-child {
+    font-size: 16px;
+    
+    width: 130px;
+}
+.detail tr td:last-child {
+    text-align: right;
+    width: 130px;
+    font-weight: bold;
+}
+
+.detail select{
+    width: 310px;
+    height: 30px;
+    border: 1px solid gray;
+}
+
+
+.detail tr td button {
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border: 3px solid #f7cee6;;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.color_rate {
+    color: #ff3500;
+}
+
+@keyframes blink-effect { 50% { opacity: 0; } } 
+.blink { 
+    animation: blink-effect 1s step-end infinite;
+    margin-left: 10px;
+    color : red;
+}
+
+/* ------상세페이지------ */
+.desc {
+    width: 1000px;
+    height: auto;
+    border: 1px solid black;
+    float: left;
+}
+
+.desc img{
+    width: 100%;
+    height: auto;
+}
+
+.list_button{
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+    background-color: white;
+    width: 140px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:16px;
+}

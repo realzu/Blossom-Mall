@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+.container {
+    width: 540px;
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+    margin: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container hr {
+    margin: 20px 0px;
+}
+
+.content button {
+    border: 1px solid palevioletred;
+    background-color: white;
+    color: palevioletred;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.content button:hover {
+    background-color: palevioletred;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.content .addr {
+    width: 520px;
+    margin: 10px;
+}
+
+.content label {
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.content input {
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+}
+
+.content input::placeholder {
+    color: #C3C3C3;
+}
+
+.content span {
+    display: block;
+    padding: 0px 0px 15px 10px;
+    /* border: 1px solid skyblue; */
+}
+
+.content .img1{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(219, 108, 145);
+    float: right;
+}
+
+.content .birth {
+    width: 100px;
+}
+
+#find {
+    width: 430px;
+}
+
+#find hr {
+    margin: 30px 0;
+}
+
+#alter {
+    width: 540px;
+}
+
+#alter hr {
+    margin: 30px 0;
+}
+
+.check label {
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.check li {
+    list-style: none;
+    margin: 10px;
+}
+
+.check span {
+    color: skyblue;
+}
+
+.check input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+
+.final {
+    text-align: center;
+}
+
+.final button {
+    border: 1px solid rgb(219, 108, 145);
+    background-color: rgb(252, 179, 196);
+    color: white;
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+

@@ -1,0 +1,14 @@
+.userList {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.userList th {
+    width: 110px;
+}
+
+.userListBox {
+    margin: 0 auto;
+    width : 730px;
+    /* border: 1px solid #000; */
+}

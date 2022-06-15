@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+/* ----------------MainBanner.js */
+.mb {
+    position:'relative';
+    z-index: 1;
+    /* padding-top: 10px; */
+}
+
+.mb img {
+    height:300px;
+}
+/* ----------------MainPg.js */
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px;
+}

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container{
+    min-width: 1560px;
+    min-height: 1080px;
+    padding: 0px;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 auto;
+    
+}
+.menutop{
+    list-style: none;
+    width: 1480px;
+    float: left;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    
+}
+
+.menu{
+    width: 1560px;
+}
+.menu1{
+    margin-top: 50px;
+    padding: 10px 50px ;
+}
+
+.my *{
+    width: 200px;
+    padding: 10px 0;
+    float: left;
+    margin: 0px 40px 0px 0px;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-size: 14px;
+}
+.myul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+    
+}
+.myli{
+    display: flex;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    color: rgb(110, 110, 110) !important;
+    
+}
+/* .my li{
+    padding: 20px 0;
+    font-family: '맑음고딕';
+    font-size: ;
+    
+} */
+.orderlist{
+    margin: 0 auto;
+    margin-top: 50px;
+    float: left;
+    width: 1280px;
+    height: 760px;
+    margin-left: 25px;
+    /* border: 1px solid #000; */
+}
+
+.box {
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    width: 750px;
+}
+
+.tit{
+    height: 80px;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Musinsa", sans-serif !important;
+    font-weight: bold;
+
+}
+
+.orderlist .qnabutton{
+    
+    margin-left: 1050px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    vertical-align: middle;
+    
+}
+.orderlist .title_input{
+    min-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 80px;
+}
+
+.orderlist .qna_textarea{
+    min-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 80px;
+    height: 8em;
+    resize: none;
+}
+
+
+.orderlist .cancelbutton{
+    
+          border: 1px solid #bdbdbd;
+          box-sizing: border-box;
+          border-radius: 12px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 28px;
+          color: #bdbdbd;
+          padding: 12px 42px;
+        
+}
+
+/* .orderlist .okbutton{
+    border: 1px solid #000000;
+          box-sizing: border-box;
+          border-radius: 12px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: #000000;
+          padding: 6px 21px;
+          
+
+} */
+.orderlist .trborder{
+    border-top: 2px solid #000000;
+}
+.mytable{
+    width: 1280px;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.row{
+    display: table;
+    table-layout: fixed;
+    width: 1280px;
+    min-height: 96px;
+
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+}
+.info{
+    width: 1280px;
+}
+.img_block{
+    display: table-cell;
+    width: 80px;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.qnatable{
+    width: 1280px;
+    height: 80px;
+    border-top: 2px solid #000;
+    border-radius: 20px;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+.qnatable thead{
+    border-bottom: 2px solid #000;
+}
+.qnatable tr td{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    
+}
+.mytable tr {
+    text-align: center;
+    border-bottom:1px solid #000;
+
+}
+.mytable tr th:nth-child(1){
+    width: 310px;
+    
+}
+.mytable tr th:nth-child(2){
+    width: 170px;
+}
+.mytable tr th:nth-child(3){
+    width: 170px;
+}
+.mytable tr th:nth-child(4){
+    width: 160px;
+}
+.mytable tr th:nth-child(5){
+    width: 170px;
+}
+.mytable tr th:nth-child(6){
+    width: 300px;
+}
+
+.mytable td:nth-child(2){
+    width: 230px;
+    text-align: left;
+    
+}
+.mytable td:nth-child(3){
+    width: 170px;
+    
+}
+
+.mytable td:nth-child(4){
+    width: 170px;
+    
+}
+.mytable td:nth-child(5){
+    width: 160px;
+    
+}
+.mytable td:nth-child(6){
+    width: 170px;
+    
+}
+.mytable td:nth-child(7){
+    width: 300px;
+    
+}
+.name{
+    max-height: 44px;
+    font-weight: bold;
+    overflow: hidden;
+    
+}
+.mytable td{
+    vertical-align: middle;
+    text-align: center;
+    
+}
+.test{
+    /* margin-left: 150px; */
+    text-align: center;
+    vertical-align: middle;
+}

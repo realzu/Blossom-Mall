@@ -1,0 +1,42 @@
+.footer {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    min-width: 1440px;
+    background-color: rgb(254, 242, 242);
+    padding-bottom: 45px;
+    /* float 안할시 상세페이지 이상함 */
+    float: right;
+    padding-top: 20px;
+}
+
+.footer .inner {
+    margin: 0 auto;
+    width: 1440px;
+    text-align: left;
+    position: relative;
+}
+
+.footer .box {
+    display: inline-block;
+    width: 33%;
+    font-size: 10pt;
+    /* margin-right: 68px; */
+}
+
+.box .top {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.footerli {
+    display: inline;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 12pt;
+    /* font-weight: bold; */
+}

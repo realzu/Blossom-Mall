@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container1 a{
+    text-decoration: none;
+    text-decoration-color:s black;
+}
+.container1{
+    margin: 50px auto;
+    width: 1040px;
+}
+.cartcart{
+    /* border: 1px solid red; */
+    width: 1040px;
+    height: 50px;
+}
+.container1 ul{
+    list-style: none;
+}
+.container1 li{
+    float: left;
+    font-size: 25px;
+}
+.cartcart li:first-child{
+    position: relative;
+    top: 20px;
+}
+.cartcart li:last-child{
+    font-size: 15px;
+    margin-left: 844px;
+    margin-bottom: 10px;
+}
+.cartcart thead{
+    width: 1040px;
+    height: 20px;
+    color: rgb(255, 210, 221);
+}
+.tr1 thead tr{
+    font-size: 18px;
+    width: 1040px;
+    height: 30px;
+    font-weight: lighter;
+    background-color: rgb(255, 210, 221);
+}
+.tr1 th:first-of-type{
+    text-align: center;
+    width: 480px;
+}
+.tr1 th:nth-child(n+2):nth-child(-n+5){
+    text-align: center;
+    width: 130px;
+}
+.tr1 th:last-child{
+    width: 40px;
+}
+.tr1 tbody tr{
+    height: 250px;
+}
+
+.tr1 img{
+    width: 180px;
+    height: 180px;
+}
+.tr1 tbody tr td:nth-child(3){
+    text-align: left;
+    position: relative;
+    right: 35px;
+    font-size: 18px;
+}
+.tr1 tbody tr td:nth-child(n+4):nth-child(-n+7){
+    text-align: center;
+}
+.tr1 tbody tr td:last-child{
+    text-align: center;
+}
+.tr1 tbody tr td:last-child button{
+    font-size: 20px;
+    background-color: #fff;
+    color: rgb(155, 155, 155);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.edit{
+    width: 40px;
+    height: 30px;
+    padding: 3px;
+    color:#fff;
+    background-color: rgb(255, 210, 221);
+    border: 1px solid rgb(255, 210, 221);
+    cursor: pointer;
+}
+.amount{
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+}
+.tr1 hr{
+    border: 5px solid rgb(255, 210, 221);
+    background-color: rgb(255, 210, 221);
+}
+.c_total{
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+.orderbutton{
+    margin: 50px auto;
+    font-size: 25px;
+    color:#fff;
+    background-color: rgb(255, 210, 221);
+    border: 1px solid rgb(255, 210, 221);
+    width: 400px;
+    height: 80px;
+    display: block;
+    cursor: pointer;
+}
