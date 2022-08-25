@@ -1,12 +1,13 @@
 # 🌸 BlossomMall-Project
 온라인 의류 쇼핑몰 팀 프로젝트
 
-> SpringBoot(백엔드)와 React(프론트엔드)로 개발했으며, 다양한 쇼핑몰 사이트를 참고하여 기능을 구현했습니다.
+> 페이지 단위로 나누어 프론트와 백을 모두 다루었으며, 다양한 온라인 쇼핑몰의 레이아웃과 기능을 참고하여 기획하였습니다.
 
 ## 🎨 개발 환경
+Javascript  
+React  
 Java 8  
 SpringToolSuite3  
-React  
 Oracle DB
 
 ## 💎 사용 기술
