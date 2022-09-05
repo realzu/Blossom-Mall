@@ -29,12 +29,31 @@ Oracle DB
 
 ## ✨ view (주요 화면)  
 
-#### - 회원정보 수정
+#### - 메인페이지, 상품 카테고리
+
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97022695/188432680-7152b50c-829f-4a5e-b13c-f6c8bae3302e.gif" width="70%"/>
+  <img src="https://user-images.githubusercontent.com/97022695/188439958-b87273b0-4037-4fd8-8e70-be8098ba8bba.gif" width="70%"/>
 </p>
 
-#### - 상품 장바구니
+#### - 회원가입, 로그인
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97022695/188441173-777eeb1c-045f-441e-8c6d-bd630aaf2daa.gif" width="70%"/>
+</p>
+
+#### - 마이페이지
+
+회원정보수정| 자주 묻는 질문 | 1:1 문의
+:--: | :--: | :--: 
+![image](https://user-images.githubusercontent.com/97022695/188442697-3ad0bba3-7104-46f8-8335-8f38555f8200.png)| ![image](https://user-images.githubusercontent.com/97022695/188442752-f6764847-878f-4cbf-a3f4-5ab22fc43832.png) | ![image](https://user-images.githubusercontent.com/97022695/188442871-61f9a659-38d8-41ae-8dff-8971f3f5cb5c.png)
+
+#### - 상품 상세페이지
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97022695/188442428-027547c0-0baf-4a03-a2bc-7973eaedbfa3.png" width="50%"/>
+</p>
+
+#### - 상품 장바구니 + 헤더
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97022695/188434254-4d1677f2-93c9-4282-a3ef-192f8f7683bf.png" width="70%"/>
