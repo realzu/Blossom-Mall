@@ -27,8 +27,15 @@ Oracle DB
 이주연 - 마이 페이지  
 진현주 - 회원가입/로그인 페이지, 메인페이지(상품 리스트)  
 
-<!-- ## 📜 ERD --!>
+## ✨ view (주요 화면)  
 
-<!-- ## ✨ view (주요 화면) --!>
+#### - 회원정보 수정
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97022695/188432680-7152b50c-829f-4a5e-b13c-f6c8bae3302e.gif" width="70%"/>
+</p>
 
+#### - 상품 장바구니
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97022695/188434254-4d1677f2-93c9-4282-a3ef-192f8f7683bf.png" width="70%"/>
+</p>
